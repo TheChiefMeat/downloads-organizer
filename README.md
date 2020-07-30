@@ -10,8 +10,9 @@ To use this script:
 Notes: 
 
 * This has been tested on Kubuntu 20.04.1
-* Use the path.config file to specify where your download folder is
-* Paths with spaces in them don't work for now.
+* Use the path.config file to specify where your download folder is.
+* Download paths with spaces in them don't work for now.
 * Use the dictionary.txt file to add/remove files to the filter.
+* The filter will continue to run in the background, use a cronjob or similar to run at startup for constant file sorting.
 
 Feedback or suggestions welcome!
