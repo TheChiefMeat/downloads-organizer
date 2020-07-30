@@ -10,18 +10,18 @@ dl_dir = DOWNLOADS_DIRECTORY
 
 class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
-        print_os_info()
-        print(f'DOWNLOADS DIRECTORY: {dl_dir}')
         change_working_directory(dl_dir)
         download_files = list_all_files(dl_dir)
         files_sorted = sort_files_by_type(download_files)
         move_files_to_folders(files_sorted)
-        print('DONE!')
 
 event_handler = MyHandler()
 observer = Observer()
 observer.schedule(event_handler, dl_dir, recursive=True)
 observer.start()
+
+print_os_info()
+print('Running Downloads Organizer...')
 
 try:
     while True:
