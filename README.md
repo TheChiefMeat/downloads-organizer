@@ -7,6 +7,11 @@ To use this script:
 4. ```cd downloadsorganizer```
 5. ```python main_script.py```
 
-Note: This has only been tested on Mac OSX and assumes that the path to your downloads folder is "/Users/\<username>/Downloads/"
+Notes: 
+
+* This has been tested on Kubuntu 20.04.1
+* Use the path.config file to specify where your download folder is
+* Paths with spaces in them don't work for now.
+* Use the dictionary.txt file to add/remove files to the filter.
 
 Feedback or suggestions welcome!
