@@ -2,7 +2,9 @@ import os
 
 USERNAME = os.getlogin()
 
-DOWNLOADS_DIRECTORY = '/Users/' + USERNAME + '/Downloads/'
+config_Path = open("path.config","r")
+
+DOWNLOADS_DIRECTORY = config_Path.read()
 
 EXTENSIONS_DICT = {
     'image': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg'],
@@ -11,7 +13,7 @@ EXTENSIONS_DICT = {
     'torrent': ['.torrent'],
     'archive': ['.zip', '.rar', '.tar', ],
     'web': ['.html', '.webarchive'],
-    'docs': ['.xlsx', '.pdf', '.csv', '.json', '.ppt', '.docx'],
+    'docs': ['.xlsx', '.pdf', '.csv', '.json', '.ppt', '.docx', '.txt'],
     'ebook': ['.epub', '.mobi'],
     'software': ['.dmg', '.pkg', '.app'],
 }

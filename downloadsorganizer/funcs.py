@@ -1,8 +1,8 @@
 import os
 import platform
 import shutil
-from downloadsorganizer.helpers import pretty_print
-from downloadsorganizer.attributes import EXTENSIONS_DICT
+from helpers import pretty_print
+from attributes import EXTENSIONS_DICT
 
 
 def print_os_info():
