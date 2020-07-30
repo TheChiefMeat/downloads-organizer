@@ -1,3 +1,7 @@
+build
+dist
+__pycache__
+main_script.spec
 
 .idea/dbnavigator.xml
 
