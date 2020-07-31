@@ -9,7 +9,9 @@ To use this script:
 
 Notes: 
 
-* This has been tested on Kubuntu 20.04.1
+* This has been tested:
+    * Kubuntu 20.04.1
+    * Windows 10
 * Use the path.config file to specify where your download folder is.
 * Download paths with spaces in them don't work for now.
 * Use the dictionary.txt file to add/remove files to the filter.

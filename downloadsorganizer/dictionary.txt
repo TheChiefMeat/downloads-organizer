@@ -1,11 +1,11 @@
 {
-    'image': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg'],
+    'image': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.tif'],
     'video': ['.mp4', '.webm', '.flv', '.avi', '.mov', '.qt', '.m4v'],
     'audio': ['.mp3', '.wav', '.m4a'],
     'torrent': ['.torrent'],
-    'archive': ['.zip', '.rar', '.tar', ],
+    'archive': ['.zip', '.rar', '.tar', '.7z', '.gz', '.xz', '.bz2', '.tgz'],
     'web': ['.html', '.webarchive'],
-    'docs': ['.xlsx', '.pdf', '.csv', '.json', '.ppt', '.docx', '.txt'],
+    'docs': ['.xlsx', '.pdf', '.csv', '.json', '.ppt', '.docx', '.txt', '.xlsm'],
     'ebook': ['.epub', '.mobi'],
-    'software': ['.dmg', '.pkg', '.app'],
+    'software': ['.dmg', '.pkg', '.app', '.deb', '.exe', '.jar', '.iso', '.img', '.sh', '.vsix', '.kwinscript', '.run', '.snap']
 }
