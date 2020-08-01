@@ -32,13 +32,13 @@ class MyHandler(FileSystemEventHandler):
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(358, 228)
+        MainWindow.resize(358, 155)
+        MainWindow.setMinimumSize(QtCore.QSize(358, 155))
+        MainWindow.setMaximumSize(QtCore.QSize(358, 155))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setMinimumSize(QtCore.QSize(358, 175))
-        self.centralwidget.setMaximumSize(QtCore.QSize(358, 175))
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(60, 80, 231, 80))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(60, 60, 231, 80))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -52,7 +52,7 @@ class Ui_MainWindow(object):
         self.Stop.clicked.connect(self.stopped)
         self.horizontalLayout.addWidget(self.Stop)
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(60, 50, 231, 21))
+        self.label.setGeometry(QtCore.QRect(60, 30, 231, 21))
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -83,6 +83,7 @@ class Ui_MainWindow(object):
         print_os_info()
         print('Running Downloads Organizer...')
         self.label.setText("Download Organizer Running...")
+        self.Start.setEnabled(False)
 
         #observer.join()
 
