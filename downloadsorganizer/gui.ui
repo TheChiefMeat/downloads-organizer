@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>358</width>
-    <height>228</height>
+    <height>175</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>358</width>
+    <height>175</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>358</width>
+    <height>175</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Download Organizer</string>
@@ -51,7 +63,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="Stop_2">
+      <widget class="QPushButton" name="Stop">
        <property name="text">
         <string>Stop and Close</string>
        </property>
@@ -76,17 +88,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>358</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
