@@ -29,9 +29,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>20</x>
       <y>80</y>
-      <width>231</width>
+      <width>312</width>
       <height>80</height>
      </rect>
     </property>
@@ -44,7 +44,14 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="Stop">
+      <widget class="QPushButton" name="RunOnce">
+       <property name="text">
+        <string>Run Once</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Stop_2">
        <property name="text">
         <string>Stop and Close</string>
        </property>
