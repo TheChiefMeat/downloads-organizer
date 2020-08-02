@@ -62,8 +62,10 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
         self.Start.clicked.connect(self.clicked)
         self.Stop.clicked.connect(self.stopped)
+        self.RunOnce.clicked.connect(self.clickedOnce)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -85,6 +87,10 @@ class Ui_MainWindow(object):
         self.Start.setEnabled(False)
 
         #observer.join()
+
+    def clickedOnce(self):
+        MyHandler.on_modified(self, MainWindow)
+        self.label.setText("Download Organizer Complete!")
 
     def stopped(self):
         event_handler = MyHandler()
