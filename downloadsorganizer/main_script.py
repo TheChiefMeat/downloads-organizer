@@ -85,6 +85,7 @@ class Ui_MainWindow(object):
         print('Running Downloads Organizer...')
         self.label.setText("Download Organizer Running...")
         self.Start.setEnabled(False)
+        self.RunOnce.setEnabled(False)
 
         #observer.join()
 
